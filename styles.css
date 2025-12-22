@@ -235,6 +235,13 @@ a {
     text-align: center;
     color: var(--text-primary);
     animation: fadeInUp 1s ease-out;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 32px 80px;
+    border-radius: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 @keyframes fadeInUp {
@@ -314,6 +321,29 @@ a {
     background: var(--primary-color);
     color: var(--dark-bg);
     font-weight: 700;
+}
+
+/* Hero section black buttons */
+.hero-buttons .btn-primary {
+    background: #000000;
+    color: var(--text-primary);
+    border: 2px solid #000000;
+}
+
+.hero-buttons .btn-primary:hover {
+    background: #1a1a1a;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+.hero-buttons .btn-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid #000000;
+}
+
+.hero-buttons .btn-secondary:hover {
+    background: #000000;
+    color: var(--text-primary);
 }
 
 .scroll-indicator {
